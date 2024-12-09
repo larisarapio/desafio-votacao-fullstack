@@ -20,7 +20,6 @@ public class VoteController {
         this.voteService = voteService;
     }
 
-
     @PostMapping(value = "/create/{associateId}/{sessionId}", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> createVote(@PathVariable UUID associateId, @PathVariable UUID sessionId, @RequestBody VoteRequestDTO data) {
         String result = voteService.createVote(associateId, sessionId, data);

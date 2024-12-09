@@ -1,10 +1,15 @@
 package com.sarapio.votacao_api.service;
 
+import com.github.javafaker.Faker;
 import com.sarapio.votacao_api.domain.associate.Associate;
 import com.sarapio.votacao_api.domain.associate.AssociateRequestDTO;
 import com.sarapio.votacao_api.repositories.AssociateRepository;
 import org.springframework.stereotype.Service;
 
+import javax.swing.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -18,6 +23,8 @@ public class AssociateService {
 
     public Associate createAssociate(AssociateRequestDTO data) {
         String cpf = data.cpf();
+
+
         String name = data.name();
 
         if (cpf == null || cpf.isEmpty() || name == null || name.isEmpty()) {
@@ -35,4 +42,6 @@ public class AssociateService {
 
         return associateRepository.save(associate);
     }
+
+
 }
