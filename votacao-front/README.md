@@ -71,9 +71,11 @@ Além disso, costumo organizar meu progresso utilizando um checklist (como o que
 
 #Telas
 - mobile
+
 ![image](https://github.com/user-attachments/assets/b558b7e7-bcd6-4abb-b8e4-de12fe45105c)
 
 -desktop
+
 ![image](https://github.com/user-attachments/assets/37651a43-c4b2-4775-8f1f-b4fd963b4fea)
 
 
