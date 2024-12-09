@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 header{
   display: flex;
   flex-direction: row;
@@ -5,5 +7,112 @@ header{
 }
 
 img{
-  height: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 105px;
+}
+
+.bt{
+  display: flex;
+  align-items: center;
+  padding-right: 25px;
+
+}
+
+main {
+  background-color: transparent;
+}
+
+.bt-topic {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: inherit;
+  padding: 10px 0;
+  text-decoration: none;
+  color: $bg-color;
+  background: $color;
+  border: 1px solid $color;
+  width: 150px;
+
+}
+
+.bt-topic:hover {
+  background-color: $color-s;
+}
+
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 20px auto;
+  border: 1px solid $color-s;
+  border-radius: 8px;
+  background-color: $bg-color;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+  max-width: 800px;
+
+  .info {
+    display: 1;
+    margin-right: 15px;
+
+    .details {
+      h3 {
+        margin: 0;
+        font-size: 1rem;
+        color: $text-color;
+      }
+
+      .descricao {
+        color: $text-color;
+        max-height: 60px;
+        white-space: normal;
+        line-height: 1.2;
+      }
+
+      p {
+        margin: 5px 0;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .stats {
+    display: flex;
+    align-items: center;
+
+    .bt-vote {
+      padding: 10px 15px;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      background-color: $primary-color;
+      color: $bg-color;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+      &:hover {
+        background-color: $second-color;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: $color;
+  text-align: center;
+  color: $bg-color;
+  padding: 15px;
 }
