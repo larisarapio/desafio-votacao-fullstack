@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CreateTopicDialogComponent } from './create-topic-dialog.component';
+import { TopicFormComponent } from './topic-form.component';
 
-describe('CreateTopicDialogComponent', () => {
-  let component: CreateTopicDialogComponent;
-  let fixture: ComponentFixture<CreateTopicDialogComponent>;
+describe('TopicFormComponent', () => {
+  let component: TopicFormComponent;
+  let fixture: ComponentFixture<TopicFormComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CreateTopicDialogComponent]
+      imports: [TopicFormComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(CreateTopicDialogComponent);
+    fixture = TestBed.createComponent(TopicFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
